@@ -1,0 +1,8 @@
+---
+# tasks file for ghomrassen
+
+- name: Install Packages
+  become: yes
+  apt:
+    name: "{{ item }}"
+  loop: "{{ apt_pkgs }}"
