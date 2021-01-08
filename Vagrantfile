@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "michaelh/heartbleed"
-  config.vm.box_version = "0.0.1"
+  config.vm.box = "galaxy3/ghomrassen"
+  config.vm.box_version = "2021.01.07-2232"
 
   config.vbguest.auto_update = false
   config.ssh.insert_key = false
