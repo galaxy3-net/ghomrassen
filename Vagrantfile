@@ -3,8 +3,8 @@ Vagrant.configure("2") do |config|
   config.vm.box_version = '2021.01.08-1225'
 #  config.vm.box_url = "file://home/korben/Downloads/BOX12.box"
 
-  config.ssh.username = 'seed'
-  config.ssh.password = 'dees'
+  config.ssh.username = 'vagrant'
+  config.ssh.password = 'vagrant'
 
   config.vbguest.auto_update = false
   config.ssh.insert_key = false
