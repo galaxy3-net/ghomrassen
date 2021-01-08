@@ -10,6 +10,8 @@ Vagrant.configure("2") do |config|
   config.ssh.connect_timeout = 20
   config.vm.boot_timeout = 120
 
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
   config.vm.network "private_network", ip: "10.55.56.56",
     auto_config: false,
   	virtualbox__intnet: "metasploitable3"
