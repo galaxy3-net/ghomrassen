@@ -16,5 +16,11 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.customize ['modifyvm', :id, '--nic0', 'intnet']
     vb.customize ['modifyvm', :id, '--nictype0', 'virtio']
+    vb.customize ['modifyvm', :id, '--cableconnected0', 'on']
+
+    vb.customize ['modifyvm', :id, '--nic1', 'intnet']
+    vb.customize ['modifyvm', :id, '--nictype1', 'virtio']
+    vb.customize ['modifyvm', :id, '--cableconnected1', 'on']
+
   end
 end
