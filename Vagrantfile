@@ -1,8 +1,7 @@
 Vagrant.configure("2") do |config|
-#  config.vm.box = "galaxy3/ghomrassen"
-#  config.vm.box_version = "2021.01.08-1134"
   config.vm.box = "galaxy3/ghomrassen"
-  config.vm.box_url = "file://home/korben/Downloads/BOX12.box"
+  config.vm.box_version = "2021.01.08-1225"
+#  config.vm.box_url = "file://home/korben/Downloads/BOX12.box"
 
   config.ssh.username = 'seed'
   config.ssh.password = 'dees'
