@@ -2,8 +2,8 @@ Vagrant.configure("2") do |config|
   config.vm.box = "galaxy3/ghomrassen"
   config.vm.box_version = "2021.01.07-2232"
 
-  config.ssh.username = 'vagrant'
-  config.ssh.password = 'vagrant'
+  config.ssh.username = 'seed'
+  config.ssh.password = 'dees'
 
   config.vbguest.auto_update = false
   config.ssh.insert_key = false
