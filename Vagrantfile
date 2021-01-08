@@ -14,8 +14,8 @@ Vagrant.configure("2") do |config|
     auto_config: false,
   	virtualbox__intnet: "metasploitable3"
 
-#  config.vm.provider "virtualbox" do |vb|
+  config.vm.provider "virtualbox" do |vb|
+  ifconfig eth14 10.55.56.56 netmask 255.255.255.0 up
 
-
-#  end
+  end
 end
