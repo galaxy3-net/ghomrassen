@@ -3,7 +3,7 @@
 
 cp /vagrant/hello.cgi /usr/lib/cgi-bin/.
 chown root:root /usr/lib/cgi-bin/hello.cgi
-chmod 0640 /usr/lib/cgi-bin/hello.cgi
+chmod a+x /usr/lib/cgi-bin/hello.cgi
 
 mkdir -p /var/www/g3
 cp /vagrant/index.html /var/www/g3/
