@@ -19,8 +19,13 @@ cat <<__EOD__ >> /etc/apache2/sites-enabled/000-default
 		SSLEngine On
 		SSLCertificateFile 		/etc/apache2/ssl/apache.crt
 		SSLCertificateKeyFile 	/etc/apache2/ssl/apache.key
-
-
+    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+</VirtualHost>
+<VirtualHost 10.55.56.56:80>
+    DocumentRoot "/var/www/g3/"
+    ServerName shellshock.galaxy3.net
+    DirectoryIndex index.html
+    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 </VirtualHost>
 __EOD__
 
