@@ -21,6 +21,8 @@ Vagrant.configure("2") do |config|
     auto_config: false,
   	virtualbox__intnet: "metasploitable3"
 
+  config.vm.network "forwarded_port", guest: 22, host: 2200, id: "ssh", disabled: true
+  config.vm.network "forwarded_port", guest: 22, host: 25656, host_ip: "0.0.0.0", auto_correct: true
 #  config.vm.provision "shell", inline: <<-SHELL
 #  ifconfig eth14 10.55.56.56 netmask 255.255.255.0 up
 #SHELL
